@@ -1,46 +1,49 @@
 # 🎓 Student Management Dashboard
 
-A modern, responsive **Student Dashboard** web application built using **React.js**, **Firebase Authentication**, **Tailwind CSS**, and mock API simulation (with `axios-mock-adapter` or `setTimeout`). This app allows users to register/login, and manage a list of students with functionality to **create**, **view**, and **delete** students.
+A modern, secure, and responsive **Student Dashboard** web app built with **React.js**, **Firebase Authentication**, **Firestore Database**, and **Tailwind CSS**. Users can register/login, view students, search by course, and add/delete students — all protected under authentication.
 
 ---
 
 ## 🔥 Features
 
-- 🔐 Firebase Authentication (Signup/Login/Logout)
-- 👨‍🎓 Add, view and delete students
-- ⏳ Mock API (using `setTimeout` or `axios-mock-adapter`)
-- 🧪 Toast notifications using `react-hot-toast`
-- 🎨 Beautiful & responsive UI with Tailwind CSS
-- ⚡ Smooth network simulations for real-world feel
-- 📱 Mobile friendly design
-- ✅ Inspect network calls (auth + API simulation)
+- 🔐 **Authentication**: Signup/Login with Firebase Auth
+- 👨‍🎓 **Add Student**: Add new students to **Firestore DB**
+- 🔎 **Search**: Search students by **course**
+- 👁️‍🗨️ **Auth Protection**: Only authenticated users can view or add student details
+- ❌ **Delete Student**: Remove student records from Firestore
+- 💬 **Toast Alerts**: `react-hot-toast` for feedback on actions (success/error/loading)
+- 📡 **Mock API** (for initial testing via `axios-mock-adapter` or `setTimeout`)
+- 🎨 Responsive UI using **Tailwind CSS**
+- 🔍 **Inspect Firebase calls** in browser devtools
 
 ---
 
 ## 🚀 Tech Stack
 
-- **Frontend:** React.js, Tailwind CSS
-- **Auth:** Firebase Authentication
-- **API Mocking:** Axios / setTimeout
-- **Notifications:** react-hot-toast
+- **Frontend**: React.js, Tailwind CSS
+- **Auth & DB**: Firebase Auth + Firestore
+- **API Simulation**: Axios / setTimeout (for mocking)
+- **Notifications**: react-hot-toast
 
 ---
 
-## 🔧 Installation
+## 🛠️ Installation
 
 ```bash
-# 1. Clone the repo
+# Clone the repo
 git clone https://github.com/yourusername/student-dashboard.git
 cd student-dashboard
 
-# 2. Install dependencies
+# Install dependencies
 npm install
 
-# 3. Add Firebase config
-# Create a .env file in the root directory and add the following:
-VITE_FIREBASE_API_KEY=your-key
+# Add Firebase config
+# Create a .env file in the root directory:
+VITE_FIREBASE_API_KEY=your-api-key
 VITE_FIREBASE_AUTH_DOMAIN=your-auth-domain
+VITE_FIREBASE_PROJECT_ID=your-project-id
+VITE_FIREBASE_APP_ID=your-app-id
 ...
 
-# 4. Start the development server
+# Start development
 npm run dev
