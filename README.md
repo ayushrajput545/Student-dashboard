@@ -17,16 +17,6 @@ A modern, responsive **Student Dashboard** web application built using **React.j
 
 ---
 
-## 📸 Screenshots
-
-| Auth Page | Dashboard |
-|-----------|-----------|
-| ![Auth Screenshot](screenshots/auth.png) | ![Dashboard Screenshot](screenshots/dashboard.png) |
-
-> _Note: Place your screenshots inside a `/screenshots` folder for preview._
-
----
-
 ## 🚀 Tech Stack
 
 - **Frontend:** React.js, Tailwind CSS
