@@ -1,12 +1,56 @@
-# React + Vite
+# 🎓 Student Management Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive **Student Dashboard** web application built using **React.js**, **Firebase Authentication**, **Tailwind CSS**, and mock API simulation (with `axios-mock-adapter` or `setTimeout`). This app allows users to register/login, and manage a list of students with functionality to **create**, **view**, and **delete** students.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔥 Features
 
-## Expanding the ESLint configuration
+- 🔐 Firebase Authentication (Signup/Login/Logout)
+- 👨‍🎓 Add, view and delete students
+- ⏳ Mock API (using `setTimeout` or `axios-mock-adapter`)
+- 🧪 Toast notifications using `react-hot-toast`
+- 🎨 Beautiful & responsive UI with Tailwind CSS
+- ⚡ Smooth network simulations for real-world feel
+- 📱 Mobile friendly design
+- ✅ Inspect network calls (auth + API simulation)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📸 Screenshots
+
+| Auth Page | Dashboard |
+|-----------|-----------|
+| ![Auth Screenshot](screenshots/auth.png) | ![Dashboard Screenshot](screenshots/dashboard.png) |
+
+> _Note: Place your screenshots inside a `/screenshots` folder for preview._
+
+---
+
+## 🚀 Tech Stack
+
+- **Frontend:** React.js, Tailwind CSS
+- **Auth:** Firebase Authentication
+- **API Mocking:** Axios / setTimeout
+- **Notifications:** react-hot-toast
+
+---
+
+## 🔧 Installation
+
+```bash
+# 1. Clone the repo
+git clone https://github.com/yourusername/student-dashboard.git
+cd student-dashboard
+
+# 2. Install dependencies
+npm install
+
+# 3. Add Firebase config
+# Create a .env file in the root directory and add the following:
+VITE_FIREBASE_API_KEY=your-key
+VITE_FIREBASE_AUTH_DOMAIN=your-auth-domain
+...
+
+# 4. Start the development server
+npm run dev
